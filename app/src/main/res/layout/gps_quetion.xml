@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:gravity="center"
+        android:background="@drawable/miniactivity1"
+        >
+
+        <TextView
+            android:text="※지도 관련※"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/textView3"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닫기"
+            android:textColor="#ffffff"
+            android:background="@drawable/location_back_off"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="1.현재 위치 불러올수없을때 : 설정→애플리케이션관리→푸흡→권한→위치 활성화\n\n2.제일 처음에 현재위치를 불러올때 긴시간이 소요됩니다. 이문제는 다음 업데이트때 해결할것을 약속드리겠습니다.\n\n3.지도가 켜질때 현재위치만 표시됩니다. 상점버튼을 누르면 주변탐색을 시작합니다.상점버튼위의 버튼을 한번더 클릭시\n 지도로 방향설정이 가능합니다.\n\n4.그 외의 문제는 문의해주시면 감사하겠습니다."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

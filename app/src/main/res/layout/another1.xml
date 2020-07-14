@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:gravity="center"
+        android:background="@drawable/miniactivity"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:textColor="#ffad6535" />
+
+        <Button
+            android:text="근처 위치 찾기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button07"
+            android:textColor="#ffffff"
+            android:background="@drawable/location_search_off"
+            android:layout_alignBaseline="@+id/button06"
+            android:layout_alignBottom="@+id/button06"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp" />
+
+        <Button
+            android:id="@+id/button06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닫기"
+            android:textColor="#ffffff"
+            android:background="@drawable/location_back_off"
+            android:layout_marginBottom="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/button07"
+            android:layout_toEndOf="@+id/button07" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/textView4"
+            android:layout_marginBottom="33dp"
+            android:layout_above="@+id/button07"
+            android:layout_alignLeft="@+id/button07"
+            android:layout_alignStart="@+id/button07"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_alignRight="@+id/button06"
+            android:layout_alignEnd="@+id/button06"
+            android:textColor="#1b92f1"
+            android:gravity="center"
+            android:textSize="30sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/PrimaryColor"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:background="@color/TabbarColor"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="8"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tabs">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/button00"
+                android:onClick="onClick00"
+                android:background="@drawable/dine"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/button01"
+                android:onClick="onClick01"
+                android:background="@drawable/sidedish"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/button03"
+                android:background="@drawable/game"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/button02"
+                android:onClick="onClick02"
+                android:background="@drawable/playing"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:text=" "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:background="@drawable/what"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick05"
+            android:layout_weight="0" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

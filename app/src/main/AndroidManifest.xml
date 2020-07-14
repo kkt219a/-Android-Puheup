@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ph.puheup">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+
+        <!--처음 시작할때 로고가 먼저떠야한다.-->
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--처음 시작할때 로고가 먼저 떠야한다.-->
+
+            <!--액티비티-->
+        </activity>
+        <activity android:name=".MainActivity"> </activity>
+        <activity android:name=".Dine"> </activity>
+        <activity android:name=".Sidedish"> </activity>
+        <activity android:name=".Playing"> </activity>
+        <activity android:name=".Minigame"> </activity>
+        <activity android:name=".Help"
+            android:theme="@style/Theme.Transparent"
+            >
+        </activity>
+        <activity android:name=".db.TestDataBaseActivity"> </activity>
+        <activity android:name=".db.InsertActivity"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+
+        <activity android:name=".RandomCalc"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity android:name=".Gps01"> </activity>
+        <activity android:name=".AnotherActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity android:name=".NaverSearch"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity android:name=".quetion"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity android:name=".Update"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+
+        <!--액티비티-->
+
+    </application>
+
+    <!--어떤걸허용할것인지.퍼미션-->
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.WRITE_GSERVICES"/>
+
+    <!--어떤걸 허용할것인지.퍼미션-->
+
+</manifest>
